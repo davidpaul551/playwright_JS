@@ -27,7 +27,7 @@ test('Radio Button Count' , async ({page}) =>{
 });
 
 
-test.only('CheckBox Test validation' , async ({page}) =>{
+test('CheckBox Test validation' , async ({page}) =>{
      await page.goto('https://testautomationpractice.blogspot.com/#');
 
     const CheckBoxcount =  await page.$$('input[type="checkbox"]');
