@@ -1,0 +1,148 @@
+# Test info
+
+- Name: Login for Practice Automation Testing
+- Location: C:\Users\david.doggala\OneDrive - ascendion\Desktop\PlayWrightExample\tests\test-practices\caseStudyLocators.spec.js:30:5
+
+# Error details
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://practicetestautomation.com/practice-test-login", waiting until "load"
+
+    at C:\Users\david.doggala\OneDrive - ascendion\Desktop\PlayWrightExample\tests\test-practices\caseStudyLocators.spec.js:32:16
+```
+
+# Page snapshot
+
+```yaml
+- link "Press \"Enter\" to skip to content":
+  - /url: "#main-container"
+- banner:
+  - navigation
+  - link "Practice Test Automation":
+    - /url: https://practicetestautomation.com/
+    - img "Practice Test Automation"
+  - navigation:
+    - navigation:
+      - list:
+        - listitem:
+          - link "Home":
+            - /url: https://practicetestautomation.com/
+        - listitem:
+          - link "Practice":
+            - /url: https://practicetestautomation.com/practice/
+        - listitem:
+          - link "Courses":
+            - /url: https://practicetestautomation.com/courses/
+        - listitem:
+          - link "Blog":
+            - /url: https://practicetestautomation.com/blog/
+        - listitem:
+          - link "Contact":
+            - /url: https://practicetestautomation.com/contact/
+- main:
+  - heading "Test login" [level=2]
+  - list:
+    - listitem: This is a simple Login page. Students can use this page to practice writing simple positive and negative LogIn tests. Login functionality is something that most of the test automation engineers need to automate.
+    - listitem: "Use next credentials to execute Login: Username: student Password: Password123"
+  - text: Username
+  - textbox "Username"
+  - text: Password
+  - textbox "Password"
+  - button "Submit"
+  - text: Your username is invalid!
+  - separator
+  - 'heading "Test case 1: Positive LogIn test" [level=5]'
+  - list:
+    - listitem: Open page
+    - listitem: Type username student into Username field
+    - listitem: Type password Password123 into Password field
+    - listitem: Push Submit button
+    - listitem: Verify new page URL contains practicetestautomation.com/logged-in-successfully/
+    - listitem: Verify new page contains expected text ('Congratulations' or 'successfully logged in')
+    - listitem: Verify button Log out is displayed on the new page
+  - separator
+  - 'heading "Test case 2: Negative username test" [level=5]'
+  - list:
+    - listitem: Open page
+    - listitem: Type username incorrectUser into Username field
+    - listitem: Type password Password123 into Password field
+    - listitem: Push Submit button
+    - listitem: Verify error message is displayed
+    - listitem: Verify error message text is Your username is invalid!
+  - separator
+  - 'heading "Test case 3: Negative password test" [level=5]'
+  - list:
+    - listitem: Open page
+    - listitem: Type username student into Username field
+    - listitem: Type password incorrectPassword into Password field
+    - listitem: Push Submit button
+    - listitem: Verify error message is displayed
+    - listitem: Verify error message text is Your password is invalid!
+- contentinfo:
+  - text: © Copyright 2020
+  - link "Practice Test Automation.":
+    - /url: https://practicetestautomation.com/
+  - text: All rights reserved |
+  - link "Privacy Policy":
+    - /url: https://practicetestautomation.com/privacy-policy/
+```
+
+# Test source
+
+```ts
+   1 | import {test , expect} from '@playwright/test';
+   2 | import { assert } from 'console';
+   3 |
+   4 |
+   5 | test('Login for Expand Testing' , async ({page})=>{
+   6 |
+   7 |     await page.goto('https://practice.expandtesting.com/login');
+   8 |     await page.waitForLoadState('load');
+   9 |     const title = await page.title();
+  10 |     console.log("Page Title is " , title);
+  11 |     await expect(page).toHaveTitle(title);
+  12 |
+  13 |     const url = await page.url();
+  14 |     console.log("page Url is " , url);
+  15 |     await expect(page).toHaveURL(url);
+  16 |
+  17 |
+  18 |     await page.locator('id=username' , "practice");
+  19 |     await page.locator("//input[@id='password']" , "SuperSecretPassword");
+  20 |     const login = await page.locator("button[type='submit']");
+  21 |     await login.click();
+  22 |
+  23 |
+  24 |
+  25 |
+  26 | });
+  27 |
+  28 |
+  29 |
+  30 | test('Login for Practice Automation Testing' , async ({page})=>{
+  31 |
+> 32 |     await page.goto('https://practicetestautomation.com/practice-test-login');
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  33 |     await page.waitForLoadState('load');
+  34 |
+  35 |     const title = await page.title();
+  36 |     console.log("Page Title is " , title);
+  37 |     await expect(page).toHaveTitle(title);
+  38 |
+  39 |     const url = await page.url();
+  40 |     console.log("page Url is " , url);
+  41 |     await expect(page).toHaveURL(url);
+  42 |
+  43 |
+  44 |     await page.locator('id=username' , "student");
+  45 |     await page.locator("//input[@id='password']" , "Password123");
+  46 |     const login = await page.locator("//button[@id='submit']");
+  47 |     await login.click();
+  48 |
+  49 |
+  50 |
+  51 |
+  52 | });
+```

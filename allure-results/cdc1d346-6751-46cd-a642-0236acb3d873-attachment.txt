@@ -1,0 +1,14 @@
+text is   Web Development
+text is   jQuery
+text is   Bootstrap
+text is   HTML
+text is   CSS
+text is   Angular
+text is   Programming Languages
+text is   Java
+text is   C#
+text is   Python
+text is   Databases
+text is   MySQL
+text is   Oracle
+text is   MS SQL Server

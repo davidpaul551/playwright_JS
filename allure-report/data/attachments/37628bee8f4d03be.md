@@ -1,0 +1,570 @@
+# Test info
+
+- Name: Checking URL13
+- Location: C:\Users\david.doggala\OneDrive - ascendion\Desktop\PlayWrightExample\tests\test-practices\URLTesting.spec.js:148:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).toHaveURL(expected)
+
+Locator: locator(':root')
+Expected string: "http://www.half.ebay.com/"
+Received string: "https://www.ebay.com/"
+Call log:
+  - expect.toHaveURL with timeout 5000ms
+  - waiting for locator(':root')
+    8 × locator resolved to <html lang="en">…</html>
+      - unexpected value "https://www.ebay.com/"
+
+    at C:\Users\david.doggala\OneDrive - ascendion\Desktop\PlayWrightExample\tests\test-practices\URLTesting.spec.js:152:24
+```
+
+# Page snapshot
+
+```yaml
+- img
+- img
+- banner:
+  - button "Scroll to top"
+  - link "Skip to main content":
+    - /url: "#mainContent"
+  - navigation:
+    - text: Hi!
+    - link "Sign in":
+      - /url: https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&sgfl=gh&ru=https%3A%2F%2Fwww.ebay.com%2F
+    - text: or
+    - link "register":
+      - /url: https://signup.ebay.com/pa/crte?ru=https%3A%2F%2Fwww.ebay.com%2F
+    - link "Daily Deals":
+      - /url: https://www.ebay.com/deals
+    - link "Brand Outlet":
+      - /url: https://www.ebay.com/b/Brand-Outlet/bn_7115532402
+    - link "Gift Cards":
+      - /url: https://www.ebay.com/giftcards
+    - link "Help & Contact":
+      - /url: https://www.ebay.com/help/home
+    - link "Sell":
+      - /url: https://www.ebay.com/sl/sell
+    - link "Watchlist":
+      - /url: https://www.ebay.com/mye/myebay/watchlist
+    - button "Expand Watch List"
+    - link "My eBay":
+      - /url: https://www.ebay.com/mys/home?source=GBH
+    - button "Expand My eBay"
+    - button "Expand Notifications"
+    - link "Cart":
+      - /url: https://cart.ebay.com
+    - button "Expand Cart"
+  - link "eBay Home":
+    - /url: https://www.ebay.com
+    - img "eBay Home"
+  - button "Shop by category"
+  - text: Enter your search keyword
+  - combobox "Search for anything"
+  - combobox "Select a category for search":
+    - option "All Categories" [selected]
+    - option "Antiques"
+    - option "Art"
+    - option "Baby"
+    - option "Books"
+    - option "Business & Industrial"
+    - option "Cameras & Photo"
+    - option "Cell Phones & Accessories"
+    - option "Clothing, Shoes & Accessories"
+    - option "Coins & Paper Money"
+    - option "Collectibles"
+    - option "Computers/Tablets & Networking"
+    - option "Consumer Electronics"
+    - option "Crafts"
+    - option "Dolls & Bears"
+    - option "Movies & TV"
+    - option "eBay Motors"
+    - option "Entertainment Memorabilia"
+    - option "Gift Cards & Coupons"
+    - option "Health & Beauty"
+    - option "Home & Garden"
+    - option "Jewelry & Watches"
+    - option "Music"
+    - option "Musical Instruments & Gear"
+    - option "Pet Supplies"
+    - option "Pottery & Glass"
+    - option "Real Estate"
+    - option "Specialty Services"
+    - option "Sporting Goods"
+    - option "Sports Mem, Cards & Fan Shop"
+    - option "Stamps"
+    - option "Tickets & Experiences"
+    - option "Toys & Hobbies"
+    - option "Travel"
+    - option "Video Games & Consoles"
+    - option "Everything Else"
+  - button "Search"
+  - link "Advanced":
+    - /url: https://www.ebay.com/sch/ebayadvsearch
+  - status
+- region "Use eBay with Google":
+  - alert
+  - iframe
+- main:
+  - list:
+    - listitem:
+      - link "eBay Live":
+        - /url: https://www.ebay.com/ebaylive
+    - listitem:
+      - link "Saved":
+        - /url: https://www.ebay.com/mye/myebay/saved
+    - listitem:
+      - link "Electronics":
+        - /url: https://www.ebay.com/b/Electronics/bn_7000259124
+      - 'button "Expand: Electronics"'
+    - listitem:
+      - link "Motors":
+        - /url: https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479
+      - 'button "Expand: Motors"'
+    - listitem:
+      - link "Fashion":
+        - /url: https://www.ebay.com/b/Fashion/bn_7000259856
+      - 'button "Expand: Fashion"'
+    - listitem:
+      - link "Collectibles and Art":
+        - /url: https://www.ebay.com/b/Collectibles-Art/bn_7000259855
+      - 'button "Expand: Collectibles and Art"'
+    - listitem:
+      - link "Sports":
+        - /url: https://www.ebay.com/b/Sporting-Goods/888/bn_1865031
+      - 'button "Expand: Sports"'
+    - listitem:
+      - link "Health & Beauty":
+        - /url: https://www.ebay.com/b/Health-Beauty/26395/bn_1865479
+      - 'button "Expand: Health & Beauty"'
+    - listitem:
+      - link "Industrial equipment":
+        - /url: https://www.ebay.com/b/Business-Industrial/12576/bn_1853744
+      - 'button "Expand: Industrial equipment"'
+    - listitem:
+      - link "Home & Garden":
+        - /url: https://www.ebay.com/b/Home-Garden/11700/bn_1853126
+      - 'button "Expand: Home & Garden"'
+    - listitem:
+      - link "Deals":
+        - /url: https://www.ebay.com/globaldeals
+    - listitem:
+      - link "Sell":
+        - /url: https://export.ebay.com/en/
+      - 'button "Expand: Sell"'
+  - group:
+    - button "Go to previous banner"
+    - list:
+      - listitem:
+        - text: All your faves are here Refresh your space, elevate your style and power your work.
+        - link "Do your thing":
+          - /url: https://www.ebay.com/deals?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+        - link "Home and Garden":
+          - /url: https://www.ebay.com/b/Home-Garden/11700/bn_1853126?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+          - img "Home and Garden"
+        - link "Home and Garden":
+          - /url: https://www.ebay.com/b/Home-Garden/11700/bn_1853126?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+        - link "Fashion":
+          - /url: https://ebay.com/b/Fashion/bn_7000259856?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+          - img "Fashion"
+        - link "Fashion":
+          - /url: https://ebay.com/b/Fashion/bn_7000259856?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+        - link "Business & Industrial":
+          - /url: https://www.ebay.com/b/Business-Industrial/12576/bn_1853744?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+          - img "Business & Industrial"
+        - link "Business & Industrial":
+          - /url: https://www.ebay.com/b/Business-Industrial/12576/bn_1853744?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A2%7Cvlpname%3Avlp_homepage
+    - button "Go to next banner"
+    - button "Pause Banner Carousel"
+  - list:
+    - listitem
+    - listitem
+    - listitem
+    - listitem
+  - heading "Explore Popular Categories" [level=2]
+  - group:
+    - list:
+      - listitem:
+        - link "Luxury":
+          - /url: https://www.ebay.com/b/Luxury-on-eBay/bn_7109710914?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A1%7Ciid%3A1%7Cli%3A8874
+          - heading "Luxury" [level=3]
+      - listitem:
+        - link "Sneakers":
+          - /url: https://www.ebay.com/b/Collectible-Sneakers/bn_7000259435?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A2%7Ciid%3A1%7Cli%3A8874
+          - heading "Sneakers" [level=3]
+      - listitem:
+        - link "P&A":
+          - /url: https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A3%7Ciid%3A1%7Cli%3A8874
+          - heading "P&A" [level=3]
+      - listitem:
+        - link "Refurbished":
+          - /url: https://br.ebay.com/b/eBay-Refurbished/bn_7040708936?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A4%7Ciid%3A1%7Cli%3A8874
+          - heading "Refurbished" [level=3]
+      - listitem:
+        - link "Trading cards":
+          - /url: https://www.ebay.com/e/row/ccgrow?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A5%7Ciid%3A1%7Cli%3A8874
+          - heading "Trading cards" [level=3]
+      - listitem:
+        - link "Pre-loved Luxury":
+          - /url: https://www.ebay.com/e/row/pre-loved-row?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A6%7Ciid%3A1%7Cli%3A8874
+          - heading "Pre-loved Luxury" [level=3]
+      - listitem:
+        - link "Toys":
+          - /url: https://www.ebay.com/b/Toys-Hobbies/220/bn_1865497?_trkparms=parentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Cpageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cc%3A7%7Ciid%3A1%7Cli%3A8874
+          - heading "Toys" [level=3]
+  - link "Get your order or your money back":
+    - /url: https://pages.ebay.com/ebay-money-back-guarantee/?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A1
+    - heading "Get your order or your money back" [level=2]
+  - text: Shop confidently with eBay Money Back Guarantee.
+  - link "Learn more":
+    - /url: https://pages.ebay.com/ebay-money-back-guarantee/?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A1
+  - link "Explore now":
+    - /url: https://www.ebay.com/globaldeals?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A5%7Cvlpname%3Avlp_homepage
+  - text: There's a deal for you, too Don't miss a chance to save on items you've been looking for.
+  - link "Explore now":
+    - /url: https://www.ebay.com/globaldeals?_trkparms=pageci%3A04617b87-356d-11f0-8135-3aeabaef65e2%7Cparentrq%3Aed70407e1960a8d2a48fa017ffff9b75%7Ciid%3A5%7Cvlpname%3Avlp_homepage%7Cii%3Abdf0b14e-204c-45ed-9abf-bc517cb2313d
+  - button "Help, opens dialogs":
+    - img
+- img
+- contentinfo:
+  - heading "Buy" [level=3]:
+    - link "Buy":
+      - /url: https://www.ebay.com/n/all-categories
+  - list:
+    - listitem:
+      - link "Registration":
+        - /url: https://www.ebay.com/help/account/default/ebay-account?id=4188
+    - listitem:
+      - link "Bidding & buying help":
+        - /url: https://www.ebay.com/help/buying
+    - listitem:
+      - link "Stores":
+        - /url: https://www.ebay.com/b/Stores-HUB/bn_7004224522
+    - listitem:
+      - link "Creator Collections":
+        - /url: https://storefronts.ebay.com/
+    - listitem:
+      - link "eBay for Charity":
+        - /url: https://www.charity.ebay.com/
+    - listitem:
+      - link "Charity Shop":
+        - /url: https://www.ebay.com/b/Charity/bn_7114598164
+    - listitem:
+      - link "Seasonal Sales and events":
+        - /url: https://www.ebay.com/b/Sales-Events/bn_7115049177
+    - listitem:
+      - link "eBay Gift Cards":
+        - /url: https://www.ebay.com/giftcards
+  - heading "Sell" [level=3]:
+    - link "Sell":
+      - /url: https://www.ebay.com/sl/sell
+  - list:
+    - listitem:
+      - link "Start selling":
+        - /url: https://www.ebay.com/sl/sell
+    - listitem:
+      - link "How to sell":
+        - /url: https://pages.ebay.com/seller-center/get-started/selling-basics.html?utm_source=gf-learn-to-sell&utm_medium=onsite
+    - listitem:
+      - link "Business sellers":
+        - /url: https://pages.ebay.com/seller-center/listing-and-marketing/seller-hub.html
+    - listitem:
+      - link "Affiliates":
+        - /url: https://partnernetwork.ebay.com/
+  - heading "Tools & apps" [level=3]
+  - list:
+    - listitem:
+      - link "Developers":
+        - /url: https://developer.ebay.com/
+    - listitem:
+      - link "Security center":
+        - /url: https://pages.ebay.com/securitycenter/index.html
+    - listitem:
+      - link "Site map":
+        - /url: https://pages.ebay.com/sitemap.html
+  - heading "eBay companies" [level=3]
+  - link "TCGplayer":
+    - /url: https://www.tcgplayer.com/
+  - heading "Stay connected" [level=3]
+  - list:
+    - listitem:
+      - link "Facebook":
+        - /url: https://www.facebook.com/ebay/
+    - listitem:
+      - link "X (Twitter)":
+        - /url: https://twitter.com/eBay
+  - heading "About eBay" [level=3]:
+    - link "About eBay":
+      - /url: https://www.ebayinc.com/
+  - list:
+    - listitem:
+      - link "Company info":
+        - /url: https://www.ebayinc.com/company/
+    - listitem:
+      - link "News":
+        - /url: https://www.ebayinc.com/stories/news/
+    - listitem:
+      - link "Deferred Prosecution Agreement with District of Massachusetts":
+        - /url: https://www.ebayinc.com/stories/press-room/#assets-settlements
+    - listitem:
+      - link "Investors":
+        - /url: https://investors.ebayinc.com/overview/default.aspx
+    - listitem:
+      - link "Careers":
+        - /url: https://careers.ebayinc.com/
+    - listitem:
+      - link "Diversity & Inclusion":
+        - /url: https://www.ebayinc.com/company/diversity-equity-inclusion/
+    - listitem:
+      - link "Global Impact":
+        - /url: https://www.ebayinc.com/impact/
+    - listitem:
+      - link "Government relations":
+        - /url: https://www.ebaymainstreet.com/
+    - listitem:
+      - link "Advertise with us":
+        - /url: https://www.ebayads.com/
+    - listitem:
+      - link "Policies":
+        - /url: https://www.ebay.com/help/policies/default/ebays-rules-policies?id=4205
+    - listitem:
+      - link "Verified Rights Owner (VeRO) Program":
+        - /url: https://pages.ebay.com/seller-center/listing-and-marketing/verified-rights-owner-program.html#what-is-the-vero-program
+    - listitem:
+      - link "eCI Licenses":
+        - /url: https://pages.ebay.com/ebayCommerce/mtl.html
+  - heading "Help & Contact" [level=3]:
+    - link "Help & Contact":
+      - /url: https://www.ebay.com/help/home
+  - list:
+    - listitem:
+      - link "Seller Center":
+        - /url: https://pages.ebay.com/seller-center/index.html?utm_source=gf&utm_medium=onsite
+    - listitem:
+      - link "Contact Us":
+        - /url: https://www.ebay.com/help/home
+    - listitem:
+      - link "eBay Returns":
+        - /url: https://pages.ebay.com/returns/
+    - listitem:
+      - link "eBay Money Back Guarantee":
+        - /url: https://pages.ebay.com/ebay-money-back-guarantee/
+  - heading "Community" [level=3]:
+    - link "Community":
+      - /url: https://community.ebay.com/
+  - list:
+    - listitem:
+      - link "Announcements":
+        - /url: https://community.ebay.com/t5/Announcements/bg-p/Announcements
+    - listitem:
+      - link "eBay Community":
+        - /url: https://community.ebay.com/
+    - listitem:
+      - link "eBay for Business Podcast":
+        - /url: https://community.ebay.com/t5/Podcasts/ct-p/Podcasts
+  - heading "eBay Sites" [level=3]
+  - button "eBay Sites - United States - change site": United States
+  - text: Copyright © 1995-2025 eBay Inc. All Rights Reserved.
+  - link "Accessibility":
+    - /url: https://www.ebayinc.com/accessibility/
+  - text: ","
+  - link "User Agreement":
+    - /url: https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259
+  - text: ","
+  - link "Privacy":
+    - /url: https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260
+  - text: ","
+  - link "Consumer Health Data":
+    - /url: https://www.ebayinc.com/company/privacy-center/privacy-notice/consumer-health-data-privacy-policy/
+  - text: ","
+  - link "Payments Terms of Use":
+    - /url: https://pages.ebay.com/payment/2.0/terms.html
+  - text: ","
+  - link "Cookies":
+    - /url: https://www.ebay.com/help/policies/member-behaviour-policies/ebay-cookie-notice?id=4267
+  - text: ","
+  - link "CA Privacy Notice":
+    - /url: https://www.ebayinc.com/company/privacy-center/privacy-notice/state-privacy-disclosures/#california
+  - text: ","
+  - link "Your Privacy Choices":
+    - /url: https://www.ebay.com/adchoice/ccpa
+  - text: and
+  - link "AdChoice":
+    - /url: https://www.ebay.com/adchoice
+- img
+```
+
+# Test source
+
+```ts
+   52 | test("Checking URL5" , async ({page}) =>{
+   53 |     await page.goto('http://www.tizag.com/javascriptT/javascriptalert.php');
+   54 |     const page_url = await page.url();
+   55 |     console.log("Page URL is " , page_url);
+   56 |     await expect(page).toHaveURL('http://www.tizag.com/javascriptT/javascriptalert.php');
+   57 |
+   58 |     const page_title = await page.title();
+   59 |     console.log('Page title is ' , page_title);
+   60 |     await expect(page).toHaveTitle(page_title);
+   61 |
+   62 | });
+   63 |
+   64 | test("Checking URL6" , async ({page}) =>{
+   65 |     await page.goto('http://www.echoecho.com/htmlforms10.html');
+   66 |     const page_url = await page.url();
+   67 |     console.log("Page URL is " , page_url);
+   68 |     await expect(page).toHaveURL('http://www.echoecho.com/htmlforms10.html');
+   69 |
+   70 |     const page_title = await page.title();
+   71 |     console.log('Page title is ' , page_title);
+   72 |     await expect(page).toHaveTitle(page_title);
+   73 |
+   74 | });
+   75 |
+   76 | test("Checking URL7" , async ({page}) =>{
+   77 |     await page.goto('http://www.leafground.com/home.html');
+   78 |     const page_url = await page.url();
+   79 |     console.log("Page URL is " , page_url);
+   80 |     await expect(page).toHaveURL('http://www.leafground.com/home.html');
+   81 |
+   82 |     const page_title = await page.title();
+   83 |     console.log('Page title is ' , page_title);
+   84 |     await expect(page).toHaveTitle(page_title);
+   85 |
+   86 | });
+   87 |
+   88 | test("Checking URL8" , async ({page}) =>{
+   89 |     await page.goto('http://automationpractice.com/index.php');
+   90 |     const page_url = await page.url();
+   91 |     console.log("Page URL is " , page_url);
+   92 |     await expect(page).toHaveURL('http://automationpractice.com/index.php');
+   93 |
+   94 |     const page_title = await page.title();
+   95 |     console.log('Page title is ' , page_title);
+   96 |     await expect(page).toHaveTitle(page_title);
+   97 |
+   98 | });
+   99 |
+  100 | test("Checking URL9" , async ({page}) =>{
+  101 |     await page.goto('https://login.salesforce.com/?locale=in');
+  102 |     const page_url = await page.url();
+  103 |     console.log("Page URL is " , page_url);
+  104 |     await expect(page).toHaveURL('https://login.salesforce.com/?locale=in');
+  105 |
+  106 |     const page_title = await page.title();
+  107 |     console.log('Page title is ' , page_title);
+  108 |     await expect(page).toHaveTitle(page_title);
+  109 |
+  110 | });
+  111 |
+  112 | test("Checking URL10" , async ({page}) =>{
+  113 |     await page.goto('http://www.filehosting.org');
+  114 |     const page_url = await page.url();
+  115 |     console.log("Page URL is " , page_url);
+  116 |     await expect(page).toHaveURL('http://www.filehosting.org');
+  117 |
+  118 |     const page_title = await page.title();
+  119 |     console.log('Page title is ' , page_title);
+  120 |     await expect(page).toHaveTitle(page_title);
+  121 |
+  122 | });
+  123 |
+  124 | test("Checking URL11" , async ({page}) =>{
+  125 |     await page.goto('http://www.bing.com');
+  126 |     const page_url = await page.url();
+  127 |     console.log("Page URL is " , page_url);
+  128 |     await expect(page).toHaveURL('http://www.bing.com');
+  129 |
+  130 |     const page_title = await page.title();
+  131 |     console.log('Page title is ' , page_title);
+  132 |     await expect(page).toHaveTitle(page_title);
+  133 |
+  134 | });
+  135 |
+  136 | test("Checking URL12" , async ({page}) =>{
+  137 |     await page.goto('https://www.freecrm.com/');
+  138 |     const page_url = await page.url();
+  139 |     console.log("Page URL is " , page_url);
+  140 |     await expect(page).toHaveURL('https://www.freecrm.com/');
+  141 |
+  142 |     const page_title = await page.title();
+  143 |     console.log('Page title is ' , page_title);
+  144 |     await expect(page).toHaveTitle(page_title);
+  145 |
+  146 | });
+  147 |
+  148 | test("Checking URL13" , async ({page}) =>{
+  149 |     await page.goto('http://www.half.ebay.com');
+  150 |     const page_url = await page.url();
+  151 |     console.log("Page URL is " , page_url);
+> 152 |     await expect(page).toHaveURL('http://www.half.ebay.com');
+      |                        ^ Error: Timed out 5000ms waiting for expect(locator).toHaveURL(expected)
+  153 |
+  154 |     const page_title = await page.title();
+  155 |     console.log('Page title is ' , page_title);
+  156 |     await expect(page).toHaveTitle(page_title);
+  157 |
+  158 | });
+  159 |
+  160 | test("Checking URL14" , async ({page}) =>{
+  161 |     await page.goto('https://alaskatrips.poweredbygps.com/');
+  162 |     const page_url = await page.url();
+  163 |     console.log("Page URL is " , page_url);
+  164 |     await expect(page).toHaveURL('https://alaskatrips.poweredbygps.com/');
+  165 |
+  166 |     const page_title = await page.title();
+  167 |     console.log('Page title is ' , page_title);
+  168 |     await expect(page).toHaveTitle(page_title);
+  169 |
+  170 | });
+  171 |
+  172 | test("Checking URL15" , async ({page}) =>{
+  173 |     await page.goto('http://www.qaclickacademy.com/interview.php');
+  174 |     const page_url = await page.url();
+  175 |     console.log("Page URL is " , page_url);
+  176 |     await expect(page).toHaveURL('http://www.qaclickacademy.com/interview.php');
+  177 |
+  178 |     const page_title = await page.title();
+  179 |     console.log('Page title is ' , page_title);
+  180 |     await expect(page).toHaveTitle(page_title);
+  181 |
+  182 | });
+  183 |
+  184 | test("Checking URL16" , async ({page}) =>{
+  185 |     await page.goto('https://app.saucelabs.com/login');
+  186 |     const page_url = await page.url();
+  187 |     console.log("Page URL is " , page_url);
+  188 |     await expect(page).toHaveURL('https://app.saucelabs.com/login');
+  189 |
+  190 |     const page_title = await page.title();
+  191 |     console.log('Page title is ' , page_title);
+  192 |     await expect(page).toHaveTitle(page_title);
+  193 |
+  194 | });
+  195 |
+  196 |
+  197 | test("Checking URL17" , async ({page}) =>{
+  198 |     await page.goto('https://opensource-demo.orangehrmlive.com/');
+  199 |     const page_url = await page.url();
+  200 |     console.log("Page URL is " , page_url);
+  201 |     await expect(page).toHaveURL('https://opensource-demo.orangehrmlive.com/');
+  202 |
+  203 |     const page_title = await page.title();
+  204 |     console.log('Page title is ' , page_title);
+  205 |     await expect(page).toHaveTitle(page_title);
+  206 |
+  207 | });
+  208 |
+  209 | test("Checking URL18" , async ({page}) =>{
+  210 |     await page.goto('http://only-testing-blog.blogspot.com/2014/05/form.html');
+  211 |     const page_url = await page.url();
+  212 |     console.log("Page URL is " , page_url);
+  213 |     await expect(page).toHaveURL('http://only-testing-blog.blogspot.com/2014/05/form.html');
+  214 |
+  215 |     const page_title = await page.title();
+  216 |     console.log('Page title is ' , page_title);
+  217 |     await expect(page).toHaveTitle(page_title);
+  218 |
+  219 | });
+```

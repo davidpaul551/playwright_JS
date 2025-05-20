@@ -1,0 +1,2 @@
+Page URL is  http://www.tizag.com/javascriptT/javascriptalert.php
+Page title is  Javascript Tutorial - Alert

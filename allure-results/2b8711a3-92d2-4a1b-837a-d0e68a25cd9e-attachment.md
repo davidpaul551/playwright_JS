@@ -1,0 +1,417 @@
+# Test info
+
+- Name: Checking URL5
+- Location: C:\Users\david.doggala\OneDrive - ascendion\Desktop\PlayWrightExample\tests\test-practices\URLTesting.spec.js:52:5
+
+# Error details
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "http://www.tizag.com/javascriptT/javascriptalert.php", waiting until "load"
+
+    at C:\Users\david.doggala\OneDrive - ascendion\Desktop\PlayWrightExample\tests\test-practices\URLTesting.spec.js:53:16
+```
+
+# Page snapshot
+
+```yaml
+- table:
+  - rowgroup:
+    - row "Tizag Tutorials":
+      - cell "Tizag Tutorials":
+        - link "Tizag Tutorials":
+          - /url: http://www.tizag.com/
+          - img "Tizag Tutorials"
+    - row "Search":
+      - cell
+      - cell "Search":
+        - textbox
+        - button "Search"
+- table:
+  - rowgroup:
+    - row:
+      - cell
+- table:
+  - rowgroup:
+    - row:
+      - cell:
+        - table:
+          - rowgroup:
+            - row:
+              - cell:
+                - link "Home":
+                  - /url: http://www.tizag.com
+                - separator
+                - text: Web Tutorials
+                - link "Beginner Tutorial":
+                  - /url: http://www.tizag.com/beginnerT/
+                - link "HTML Tutorial":
+                  - /url: http://www.tizag.com/htmlT/
+                - link "CSS Tutorial":
+                  - /url: http://www.tizag.com/cssT/
+                - text: Scripting
+                - link "Javascript Tutorial":
+                  - /url: http://www.tizag.com/javascriptT/
+                - link "PHP Tutorial":
+                  - /url: http://www.tizag.com/phpT/
+                - link "Perl Tutorial":
+                  - /url: http://www.tizag.com/perlT/
+                - link "Ajax Tutorial":
+                  - /url: http://www.tizag.com/ajaxTutorial/
+                - link "ASP Tutorial":
+                  - /url: http://www.tizag.com/aspTutorial/
+                - link "VBScript Tutorial":
+                  - /url: http://www.tizag.com/vbscriptTutorial/
+                - text: Databases
+                - link "SQL Tutorial":
+                  - /url: http://www.tizag.com/sqlTutorial/
+                - link "MySQL Tutorial":
+                  - /url: http://www.tizag.com/mysqlTutorial/
+                - text: Miscellaneous
+                - link "XML Tutorial":
+                  - /url: http://www.tizag.com/xmlTutorial/
+                - link "Webhost Tutorial":
+                  - /url: http://www.tizag.com/webhost/
+                - link "Flash Tutorial":
+                  - /url: http://www.tizag.com/flashTutorial/
+                - link "SEO Tutorial":
+                  - /url: http://www.tizag.com/SEOTutorial/
+                - separator
+                - text: Javascript Tutorial
+                - link "Javascript - Intro":
+                  - /url: http://www.tizag.com/javascriptT/index.php
+                - link "Javascript - Syntax":
+                  - /url: http://www.tizag.com/javascriptT/javascriptsyntax.php
+                - link "Javascript - Enable":
+                  - /url: http://www.tizag.com/javascriptT/javascript-enable.php
+                - link "Javascript - Location":
+                  - /url: http://www.tizag.com/javascriptT/javascriptheadnbody.php
+                - link "Javascript - External":
+                  - /url: http://www.tizag.com/javascriptT/javascriptexternal.php
+                - link "Javascript - Operators":
+                  - /url: http://www.tizag.com/javascriptT/javascriptoperators.php
+                - link "Javascript - Variables":
+                  - /url: http://www.tizag.com/javascriptT/javascriptvariables.php
+                - link "Javascript - Functions":
+                  - /url: http://www.tizag.com/javascriptT/javascriptfunction.php
+                - link "Javascript - Events":
+                  - /url: http://www.tizag.com/javascriptT/javascriptevents.php
+                - link "Javascript - Statements":
+                  - /url: http://www.tizag.com/javascriptT/javascriptstatements.php
+                - link "Javascript - If":
+                  - /url: http://www.tizag.com/javascriptT/javascriptif.php
+                - link "Javascript - Else If":
+                  - /url: http://www.tizag.com/javascriptT/javascriptelseif.php
+                - link "Javascript - While":
+                  - /url: http://www.tizag.com/javascriptT/javascriptwhile.php
+                - link "Javascript - For Loop":
+                  - /url: http://www.tizag.com/javascriptT/javascriptfor.php
+                - link "Javascript - Comments":
+                  - /url: http://www.tizag.com/javascriptT/javascriptcomment.php
+                - link "Javascript - Array":
+                  - /url: http://www.tizag.com/javascriptT/javascriptarray.php
+                - link "Javascript - Alert":
+                  - /url: http://www.tizag.com/javascriptT/javascriptalert.php
+                - link "Javascript - Confirm":
+                  - /url: http://www.tizag.com/javascriptT/javascriptconfirm.php
+                - link "Javascript - Prompt":
+                  - /url: http://www.tizag.com/javascriptT/javascriptprompt.php
+                - link "Javascript - Print":
+                  - /url: http://www.tizag.com/javascriptT/javascriptprint.php
+                - link "Javascript - Redirect":
+                  - /url: http://www.tizag.com/javascriptT/javascriptredirect.php
+                - link "Javascript - Pop Up":
+                  - /url: http://www.tizag.com/javascriptT/javascriptpopups.php
+                - link "Javascript - Date":
+                  - /url: http://www.tizag.com/javascriptT/javascriptdate.php
+                - link "Javascript - Form":
+                  - /url: http://www.tizag.com/javascriptT/javascriptform.php
+                - link "Javascript - Void 0":
+                  - /url: http://www.tizag.com/javascriptT/javascriptvoid.php
+                - text: Javascript String
+                - link "Javascript - Strings":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-functions.php
+                - link "Javascript - Length":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-length.php
+                - link "Javascript - Split":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-split.php
+                - link "Javascript - Search":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-search.php
+                - link "Javascript - Replace":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-replace.php
+                - link "Javascript - indexOf":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-indexOf.php
+                - link "Javascript - Compare":
+                  - /url: http://www.tizag.com/javascriptT/javascript-string-compare.php
+                - text: Javascript Advanced
+                - link "Javascript - getElementById":
+                  - /url: http://www.tizag.com/javascriptT/javascript-getelementbyid.php
+                - link "Javascript - innerHTML":
+                  - /url: http://www.tizag.com/javascriptT/javascript-innerHTML.php
+                - text: Get Help!
+                - link "Javascript Forum":
+                  - /url: http://forums.tizag.com/forumdisplay.php?f=11
+                - separator
+                - link "Contact Us":
+                  - /url: http://www.tizag.com/about/contact.php
+      - cell:
+        - table:
+          - rowgroup:
+            - row:
+              - cell:
+                - link "Bookmark and Share":
+                  - /url: http://www.addthis.com/bookmark.php
+                  - img "Bookmark and Share"
+                - heading "JavaScript Alert - What is it?" [level=1]
+                - paragraph:
+                  - text: If you do not have JavaScript enabled on your web browser, then you may have been able to avoid "alerts" in your internet adventures. The JavaScript alert is a dialogue box that pops up and takes the focus away from the current window and forces the web browser to read the message.
+                  - link "View an alert message":
+                    - /url: "#"
+                  - text: .
+                - link "Advertise on Tizag.com":
+                  - /url: http://www.tizag.com/about/advertise.php
+                - paragraph: You may have noticed that you didn't get a JavaScript alert popup when you came to this page. That is because doing so would be in bad taste for a web designer. You see, alerts should be very, very rarely used and even then these following guidelines should be considered when using them.
+                - heading "When to Use Popups / Alerts" [level=1]
+                - paragraph: "JavaScript alerts are ideal for the following situations:"
+                - list:
+                  - listitem: If you want to be absolutely sure they see a message before doing anything on the website.
+                  - listitem: You would like to warn the user about something. For example "the following page contains humor not suitable for those under the age of 14."
+                  - listitem: An error has occurred and you want to inform the user of the problem.
+                  - listitem: When asking users for confirmation of some action. For example, if they have just agreed to sign over the deed to their house and you want to ask them again if they are absolutely positive they want to go through with this decision!
+                - paragraph: Even though the above situations would all be valid times to use the alert function, you could also skip the alert popup and just have the error message, confirmation, etc displayed in plain HTML. More and more bigger sites are opting to lose JavaScript alerts and instead keep everything in HTML.
+                - heading "Coding a Simple JavaScript Alert" [level=1]
+                - paragraph: Just for fun, let's suppose that we are making an alert for some website that asks people to hand over the deed to their house. We need to add an alert to be sure these people are in agreement. The following code will add an alert by using an HTML button and the onClick event.
+                - heading "HTML & JavaScript Code:" [level=2]
+                - text: <form> <input type="button" onclick= "alert('Are you sure you want to give us the deed to your house?')" value="Confirmation Alert"> </form>
+                - heading "Display:" [level=2]
+                - button "Confirmation Alert"
+                - paragraph:
+                  - text: The string that appears between the single quotes is what will be printed inside the alert box when the user clicks on the button. If the HTML Forms are confusing to you, be sure to brush up on our
+                  - link "HTML Forms Lesson":
+                    - /url: http://www.tizag.com/htmlT/forms.php
+                  - text: . Continue the tutorial to learn more about the different kinds of JavaScript pop ups that are at your disposal.
+                - insertion
+                - link "Bookmark and Share":
+                  - /url: http://www.addthis.com/bookmark.php
+                  - img "Bookmark and Share"
+                - list:
+                  - listitem:
+                    - link "Go Back":
+                      - /url: javascriptarray.php
+                  - listitem:
+                    - link "Continue":
+                      - /url: javascriptconfirm.php
+                - heading "Found Something Wrong in this Lesson?" [level=1]
+                - paragraph:
+                  - link "Report a Bug or Comment on This Lesson":
+                    - /url: http://www.tizag.com/about/report.php?tutorial=Javascript Tutorial&lesson=Alert
+                  - text: "- Your input is what keeps Tizag improving with time!"
+      - cell "Web Reference HTML Reference CSS Reference CSS Examples PHP Examples Help Tizag Grow Link to Tizag Tizag.com Store Advertise Here More Tutorials! Microsoft Office Tutorials Artist Tutorials":
+        - table:
+          - rowgroup:
+            - row "Web Reference HTML Reference CSS Reference CSS Examples PHP Examples Help Tizag Grow Link to Tizag Tizag.com Store":
+              - cell "Web Reference HTML Reference CSS Reference CSS Examples PHP Examples Help Tizag Grow Link to Tizag Tizag.com Store":
+                - text: Web Reference
+                - link "HTML Reference":
+                  - /url: http://www.tizag.com/htmlT/reference/htmlreference.php
+                - link "CSS Reference":
+                  - /url: http://www.tizag.com/cssT/reference.php
+                - link "CSS Examples":
+                  - /url: http://www.tizag.com/cssT/liveExampleCss/
+                - link "PHP Examples":
+                  - /url: http://www.tizag.com/phpT/examples/formex.php
+                - separator
+                - text: Help Tizag Grow
+                - link "Link to Tizag":
+                  - /url: http://www.tizag.com/about/linkus.php
+                - link "Tizag.com Store":
+                  - /url: http://www.tizag.com/store/
+                - separator
+        - table:
+          - rowgroup:
+            - row "Advertise Here More Tutorials! Microsoft Office Tutorials Artist Tutorials":
+              - cell "Advertise Here More Tutorials! Microsoft Office Tutorials Artist Tutorials":
+                - link "Advertise Here":
+                  - /url: http://www.tizag.com/about/advertise.php
+                - text: More Tutorials!
+                - link "Microsoft Office Tutorials":
+                  - /url: http://office.tizag.com/
+                - link "Artist Tutorials":
+                  - /url: http://artist.tizag.com/
+                - separator
+    - row "2003-2008 Erack Network | Copyright | Privacy Policy | Advertising Information Site design by Seattle Web Design":
+      - cell "2003-2008 Erack Network | Copyright | Privacy Policy | Advertising Information Site design by Seattle Web Design":
+        - paragraph:
+          - text: 2003-2008 Erack Network |
+          - link "Copyright":
+            - /url: http://www.tizag.com/about/copy.php
+          - text: "|"
+          - link "Privacy Policy":
+            - /url: http://www.tizag.com/about/privacy.php
+          - text: "|"
+          - link "Advertising Information":
+            - /url: http://www.tizag.com/about/advertise.php
+          - text: Site design by
+          - link "Seattle Web Design":
+            - /url: http://www.epearl.net/
+```
+
+# Test source
+
+```ts
+   1 | import {test , expect} from '@playwright/test';
+   2 |
+   3 |
+   4 | test("Checking URL1" , async ({page}) =>{
+   5 |     await page.goto('https://themeforest.net/');
+   6 |     const page_url = await page.url();
+   7 |     console.log("Page URL is " , page_url);
+   8 |     await expect(page).toHaveURL('https://themeforest.net/');
+   9 |
+   10 |     const page_title = await page.title();
+   11 |     console.log('Page title is ' , page_title);
+   12 |     await expect(page).toHaveTitle(page_title);
+   13 |
+   14 | });
+   15 |
+   16 | test("Checking URL2" , async ({page}) =>{
+   17 |     await page.goto('https://demo.opencart.com/');
+   18 |     const page_url = await page.url();
+   19 |     console.log("Page URL is " , page_url);
+   20 |     await expect(page).toHaveURL('https://demo.opencart.com/');
+   21 |
+   22 |     const page_title = await page.title();
+   23 |     console.log('Page title is ' , page_title);
+   24 |     await expect(page).toHaveTitle(page_title);
+   25 |
+   26 | });
+   27 |
+   28 | test("Checking URL3" , async ({page}) =>{
+   29 |     await page.goto('https://www.rediff.com/');
+   30 |     const page_url = await page.url();
+   31 |     console.log("Page URL is " , page_url);
+   32 |     await expect(page).toHaveURL('https://www.rediff.com/');
+   33 |
+   34 |     const page_title = await page.title();
+   35 |     console.log('Page title is ' , page_title);
+   36 |     await expect(page).toHaveTitle(page_title);
+   37 |
+   38 | });
+   39 |
+   40 | test("Checking URL4" , async ({page}) =>{
+   41 |     await page.goto('http://www.leafground.com/pages/Dropdown.html');
+   42 |     const page_url = await page.url();
+   43 |     console.log("Page URL is " , page_url);
+   44 |     await expect(page).toHaveURL('http://www.leafground.com/pages/Dropdown.html');
+   45 |
+   46 |     const page_title = await page.title();
+   47 |     console.log('Page title is ' , page_title);
+   48 |     await expect(page).toHaveTitle(page_title);
+   49 |
+   50 | });
+   51 |
+   52 | test("Checking URL5" , async ({page}) =>{
+>  53 |     await page.goto('http://www.tizag.com/javascriptT/javascriptalert.php');
+      |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+   54 |     const page_url = await page.url();
+   55 |     console.log("Page URL is " , page_url);
+   56 |     await expect(page).toHaveURL('http://www.tizag.com/javascriptT/javascriptalert.php');
+   57 |
+   58 |     const page_title = await page.title();
+   59 |     console.log('Page title is ' , page_title);
+   60 |     await expect(page).toHaveTitle(page_title);
+   61 |
+   62 | });
+   63 |
+   64 | test("Checking URL6" , async ({page}) =>{
+   65 |     await page.goto('http://www.echoecho.com/htmlforms10.html');
+   66 |     const page_url = await page.url();
+   67 |     console.log("Page URL is " , page_url);
+   68 |     await expect(page).toHaveURL('http://www.echoecho.com/htmlforms10.html');
+   69 |
+   70 |     const page_title = await page.title();
+   71 |     console.log('Page title is ' , page_title);
+   72 |     await expect(page).toHaveTitle(page_title);
+   73 |
+   74 | });
+   75 |
+   76 | test("Checking URL7" , async ({page}) =>{
+   77 |     await page.goto('http://www.leafground.com/home.html');
+   78 |     const page_url = await page.url();
+   79 |     console.log("Page URL is " , page_url);
+   80 |     await expect(page).toHaveURL('http://www.leafground.com/home.html');
+   81 |
+   82 |     const page_title = await page.title();
+   83 |     console.log('Page title is ' , page_title);
+   84 |     await expect(page).toHaveTitle(page_title);
+   85 |
+   86 | });
+   87 |
+   88 | test("Checking URL8" , async ({page}) =>{
+   89 |     await page.goto('http://automationpractice.com/index.php');
+   90 |     const page_url = await page.url();
+   91 |     console.log("Page URL is " , page_url);
+   92 |     await expect(page).toHaveURL('http://automationpractice.com/index.php');
+   93 |
+   94 |     const page_title = await page.title();
+   95 |     console.log('Page title is ' , page_title);
+   96 |     await expect(page).toHaveTitle(page_title);
+   97 |
+   98 | });
+   99 |
+  100 | test("Checking URL9" , async ({page}) =>{
+  101 |     await page.goto('https://login.salesforce.com/?locale=in');
+  102 |     const page_url = await page.url();
+  103 |     console.log("Page URL is " , page_url);
+  104 |     await expect(page).toHaveURL('https://login.salesforce.com/?locale=in');
+  105 |
+  106 |     const page_title = await page.title();
+  107 |     console.log('Page title is ' , page_title);
+  108 |     await expect(page).toHaveTitle(page_title);
+  109 |
+  110 | });
+  111 |
+  112 | test("Checking URL10" , async ({page}) =>{
+  113 |     await page.goto('http://www.filehosting.org');
+  114 |     const page_url = await page.url();
+  115 |     console.log("Page URL is " , page_url);
+  116 |     await expect(page).toHaveURL('http://www.filehosting.org');
+  117 |
+  118 |     const page_title = await page.title();
+  119 |     console.log('Page title is ' , page_title);
+  120 |     await expect(page).toHaveTitle(page_title);
+  121 |
+  122 | });
+  123 |
+  124 | test("Checking URL11" , async ({page}) =>{
+  125 |     await page.goto('http://www.bing.com');
+  126 |     const page_url = await page.url();
+  127 |     console.log("Page URL is " , page_url);
+  128 |     await expect(page).toHaveURL('http://www.bing.com');
+  129 |
+  130 |     const page_title = await page.title();
+  131 |     console.log('Page title is ' , page_title);
+  132 |     await expect(page).toHaveTitle(page_title);
+  133 |
+  134 | });
+  135 |
+  136 | test("Checking URL12" , async ({page}) =>{
+  137 |     await page.goto('https://www.freecrm.com/');
+  138 |     const page_url = await page.url();
+  139 |     console.log("Page URL is " , page_url);
+  140 |     await expect(page).toHaveURL('https://www.freecrm.com/');
+  141 |
+  142 |     const page_title = await page.title();
+  143 |     console.log('Page title is ' , page_title);
+  144 |     await expect(page).toHaveTitle(page_title);
+  145 |
+  146 | });
+  147 |
+  148 | test("Checking URL13" , async ({page}) =>{
+  149 |     await page.goto('http://www.half.ebay.com');
+  150 |     const page_url = await page.url();
+  151 |     console.log("Page URL is " , page_url);
+  152 |     await expect(page).toHaveURL('http://www.half.ebay.com');
+  153 |
+```
