@@ -7,7 +7,6 @@ test('test', async ({ page }) => {
   await page.getByRole('combobox', { name: 'Search' }).press('Enter');
   await expect(await page.locator("//ytd-topbar-logo-renderer[@id='logo']//div[@class='style-scope ytd-topbar-logo-renderer']//yt-icon[@id='logo-icon']")).toBeVisible();
   await page.getByRole('button', { name: 'Guide' }).click();
-  await page.locator('#scrim').click();
   await page.getByRole('combobox', { name: 'Search' }).click();
   await page.getByRole('combobox', { name: 'Search' }).press('ControlOrMeta+a');
   await page.getByRole('combobox', { name: 'Search' }).fill('playwright data driven testing javascript');
@@ -23,7 +22,6 @@ test('test', async ({ page }) => {
   await page.getByRole('combobox', { name: 'Search' }).press('Enter');
   await page.getByRole('button', { name: 'Guide' }).click();
   await expect(await page.locator("//ytd-topbar-logo-renderer[@id='logo']//div[@class='style-scope ytd-topbar-logo-renderer']//yt-icon[@id='logo-icon']")).toBeVisible();
-  await page.locator('#scrim').click();
   await page.getByRole('combobox', { name: 'Search' }).click();
   await page.getByRole('combobox', { name: 'Search' }).press('ControlOrMeta+a');
   await page.getByRole('combobox', { name: 'Search' }).fill('playwright best practices');
