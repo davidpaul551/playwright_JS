@@ -1,0 +1,3 @@
+[ 'qwerty ', 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'IPHONE 13 PRO' ]
+true
+ | 683eadea81a20695305c3719 | 

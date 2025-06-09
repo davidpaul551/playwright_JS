@@ -1,0 +1,244 @@
+Website:
+https://www.hollandandbarrett.com/en-au/
+
+Alerts:
+https://the-internet.herokuapp.com/javascript_alerts
+
+
+Test case 1:
+1. Open the website.
+2. Click on Rewards section. (Note: Creating an account directly throws an error, instead click on any sections eg: Rewards, store will be helpful to create an account, Website maintenance issue)
+3. Click on account and then “Create account”
+4. Register for an account, please update the details.
+5. Verify whether the account has been created.
+
+
+Test case 2:
+1. Open the website.
+2. Login with the registered user.
+3. Add any Vitamin C products from 'Vitamins & Supplements' to the basket.
+4. Add any Vegan Chocolate products from 'Vegan' to the basket.
+5. Verify both the products are added to the basket.
+
+
+Test case 3:
+1. Open the website.
+2. Login with the registered user.
+3. Add any 2 Vitamin C products from 'Vitamins & Supplements' to the basket.
+4. Add any 3 Vegan Chocolate products from 'Vegan' to the basket.
+5. Verify all the products are added to the basket.
+6. Verify the subtotal of the products (quantity * price) and total of the basket.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PLAYWRIGHT:
+------------------
+
+ npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+
+
+
+
+Design Playwright Program to Checking Browser Title and Validate
+       Run Tests in Firefox and Chromium
+    https://themeforest.net/
+    https://demo.opencart.com/
+    https://www.rediff.com/
+    http://www.leafground.com/pages/Dropdown.html
+    http://www.tizag.com/javascriptT/javascriptalert.php
+    http://www.echoecho.com/htmlforms10.html
+    http://www.leafground.com/home.html
+    http://automationpractice.com/index.php
+    https://login.salesforce.com/?locale=in
+    http://www.filehosting.org
+    http://www.bing.com
+    https://www.freecrm.com/
+    http://www.half.ebay.com
+    https://alaskatrips.poweredbygps.com/
+    http://www.qaclickacademy.com/interview.php
+    https://app.saucelabs.com/login
+    https://opensource-demo.orangehrmlive.com/
+    http://only-testing-blog.blogspot.com/2014/05/form.html
+
+
+
+
+
+
+Design Playwright Program to using locators Property,Xpath,CSS Selector
+      1. Run in all browsers below urls
+	     https://practice.expandtesting.com/login
+	     https://practicetestautomation.com/practice-test-login
+	  2. Use Assertions to Validate Browser Title and URL
+
+
+
+Locators:
+--------------
+https://playwright.dev/docs/locators
+
+
+page.getByRole() to locate by explicit and implicit accessibility attributes.
+page.getByText() to locate by text content.
+page.getByLabel() to locate a form control by associated label's text.
+page.getByPlaceholder() to locate an input by placeholder.
+page.getByAltText() to locate an element, usually image, by its text alternative.
+page.getByTitle() to locate an element by its title attribute.
+page.getByTestId() to locate an element based on its data-testid attribute (other attributes can be configured).
+
+
+
+
+
+1. Register Ebay
+	     https://www.ebay.com/
+		 Verify Logo in home page
+		 Click on Register (Pesonal)
+		    https://signup.ebay.com/pa/crte?ru=https%3A%2F%2Fwww.ebay.com%2F
+		 File all the fields using locators
+		 Confirm logo in page
+		  
+	  2. Login 
+	     Verify Logo in home page
+		 Click on  Login
+		     https://signin.ebay.com/ws/eBayISAPI.dll?
+			 File all the fields using locators
+		 Confirm logo in page
+
+
+
+
+https://demo.nopcommerce.com/register
+
+https://updates.jenkins.io/
+https://mirror.bom.albony.in/
+
+
+"C:\Program Files\Java\jdk-21.0.7\bin\keytool" -import -trustcacerts -alias updates_jenkins_io -file C:\Users\david.doggala\OneDrive - ascendion\Desktop\updates-jenkins.crt -keystore "C:\Program Files\Java\jdk-21.0.7\lib\security\cacerts" -storepass changeit
+
+
+
+"C:\Program Files\Java\jdk-21.0.7\bin\keytool" -import -trustcacerts -alias mirror_bom_albony_in -file "C:\Users\david.doggala\OneDrive - ascendion\Desktop\mirror-cert.crt" -keystore "C:\Program Files\Java\jdk-21.0.7\lib\security\cacerts" -storepass changeit
+
+
+"C:\Program Files\Java\jdk-21.0.7\bin\javac" "C:\Users\david.doggala\OneDrive - ascendion\Desktop\SSLTest.txt"
+
+
+
+"C:\Program Files\Java\jdk-21.0.7\bin\keytool" -import -trustcacerts -alias mirror_bom_albony_in_intermediate -file "C:\Users\david.doggala\OneDrive - ascendion\Desktop\mirror_bom_albony_in-fullchain.crt" -keystore "C:\Program Files\Java\jdk-21.0.7\lib\security\cacerts" -storepass changeit
+
+
+
+
+
+https://testautomationpractice.blogspot.com/#
+
+https://the-internet.herokuapp.com/javascript_alerts
+
+https://ksrtc.in/login
+https://web-scraping.dev/
+
+
+
+1. https://testautomationpractice.blogspot.com/#
+	2. https://www.facebook.com/r.php?entry_point=login
+
+
+
+
+
+
+
+
+
+Reports:
+-----------
+https://playwright.dev/docs/test-reporters
+
+
+Allure reports:
+
+Installation: 
+npm install -D allure-playwright
+
+Generate Allure Report after the tests are executed:
+allure generate ./allure-results -o ./allure-report
+allure generate ./allure-results -o ./allure-report --clean
+
+
+Open the generated report:
+allure open ./allure-report
+
+
+Codegen:
+-----------
+PS D:\Playwright Complete Programs> npx playwright codegen -o tests/TestCodegen.spec.js
+D:\Playwright Complete Programs> npx playwright codegen --target javascript
+D:\Playwright Complete Programs> npx playwright codegen -b browser
+D:\Playwright Complete Programs> npx playwright codegen -browser chrome
+D:\Playwright Complete Programs> npx playwright codegen -device iphone 12
+D:\Playwright Complete Programs> npx playwright codegen --viewport-size="800,600" playwright.dev
+PS D:\Playwright Complete Programs> npx playwright codegen -o tests/TestCodegen.spec.js
+D:\Playwright Complete Programs> npx playwright codegen --target javascript
+D:\Playwright Complete Programs> npx playwright codegen -b browser
+D:\Playwright Complete Programs> npx playwright codegen -browser chrome
+D:\Playwright Complete Programs> npx playwright codegen -device iphone 12
+D:\Playwright Complete Programs> npx playwright codegen --viewport-size="800,600" playwright.dev
+
+
+Create playwright program using codegen 
+https://www.youtube.com/
+                       ['data driven testing in playwright',
+                        'playwright data driven testing javascript',
+                        'playwright test data management',
+                        'playwright performance github',
+                        'playwright best practices'
+						'playwright performance testing']	  
+	  
+https://www.google.com/
+		selenium vs playwright
+		selenium vs playwright vs cypress
+		selenium vs cucumber
+		selenium vs robot framework
+		playwright automation
+		playwright automation framework
+Use assertion to Validate logo each parameterization
+
+
+
+9880614548
+
+
+

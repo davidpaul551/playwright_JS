@@ -2,7 +2,10 @@
   "name": "playwrightexample",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "screenshots": "npx playwright test screenshot.spec.js --headed",
+    "bddfeatures": "cucumber-js tests/Practice/Cucumber-BDD/features --require tests/Practice/Cucumber-BDD/features/step_definitions --require tests/Practice/Cucumber-BDD/features/support"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +17,8 @@
     "allure-playwright": "^3.2.2"
   },
   "dependencies": {
-    "csv-parse": "^5.6.0"
+    "@cucumber/cucumber": "^11.3.0",
+    "csv-parse": "^5.6.0",
+    "exceljs": "^4.4.0"
   }
 }

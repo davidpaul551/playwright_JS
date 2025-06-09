@@ -20,7 +20,7 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: 2,
+  // retries: 2,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -30,7 +30,7 @@ export default defineConfig({
             //['dot'],
               // ['json' , {outputFile:'results.json'}],
               // ['junit' , {outputFile:'results.xml'}],
-              ['allure-playwright', {outputFolder:'allure-results'}]
+             // ['allure-playwright', {outputFolder:'allure-results'}]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -40,7 +40,10 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    video: 'retain-on-failure',
+    ignoreHTTPSErrors:true,
+    permissions:['geolocation'],
+    // viewport:{width:720 , height:720}
   },
 
   /* Configure projects for major browsers */
@@ -57,7 +60,7 @@ export default defineConfig({
 
     // {
     //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
+    //   use: { ...devices['iPhone 15 Pro Max'] },
     // },
 
     /* Test against mobile viewports. */

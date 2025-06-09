@@ -1,0 +1,68 @@
+Website:
+https://www.hollandandbarrett.com/en-au/
+
+Alerts:
+https://the-internet.herokuapp.com/javascript_alerts
+
+
+Test case 1:
+1. Open the website.
+2. Click on Rewards section. (Note: Creating an account directly throws an error, instead click on any sections eg: Rewards, store will be helpful to create an account, Website maintenance issue)
+3. Click on account and then “Create account”
+4. Register for an account, please update the details.
+5. Verify whether the account has been created.
+
+
+Test case 2:
+1. Open the website.
+2. Login with the registered user.
+3. Add any Vitamin C products from 'Vitamins & Supplements' to the basket.
+4. Add any Vegan Chocolate products from 'Vegan' to the basket.
+5. Verify both the products are added to the basket.
+
+
+Test case 3:
+1. Open the website.
+2. Login with the registered user.
+3. Add any 2 Vitamin C products from 'Vitamins & Supplements' to the basket.
+4. Add any 3 Vegan Chocolate products from 'Vegan' to the basket.
+5. Verify all the products are added to the basket.
+6. Verify the subtotal of the products (quantity * price) and total of the basket.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PLAYWRIGHT:
+------------------
+
+ npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test

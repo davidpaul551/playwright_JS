@@ -1,0 +1,5 @@
+Number of date inputs: 4
+Input 0 value: 2002-06-14
+Input 1 value: 6
+Input 2 value: 14
+Input 3 value: 2002

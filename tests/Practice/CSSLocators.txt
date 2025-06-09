@@ -1,0 +1,60 @@
+--  if ID
+    tagname#id (or) #id
+-- class attribute is present
+    tagname.class (or) .class
+-- on any attribute
+    [attribute='value']
+-- traversing from Parent to Child
+    parentTagName >> ChildName
+-- Based on Text
+    text=''
+
+
+// If we give serial Mode which is default in Playwright  but if we specify , the test execution fails if the previous test fails , this is useful in the inter dependency of tests
+// To run the only test cases with tag  defined in the test description as "@Web Login Test" -> cmd is npx playwright test Login.spec.js --grep(regular expression) @Web
+
+
+// run using the custom scripts as
+"scripts": {
+    "screenshots":"npx playwright test screenshot.spec.js --headed"
+  }
+  in package.json
+  then run using cmd as -> npm run screenshots
+
+CUCUMBER:
+
+npm install @cucumber/cucumber
+
+To run a feature file -> npx cucumber-js
+
+
+    "bddfeatures": "cucumber-js tests/Practice/Cucumber-BDD/features --require tests/Practice/Cucumber-BDD/features/step_definitions"
+
+To run only SCenarios with tag:
+-------------------------------------
+npx cucumber-js --tags "@tag_name",
+npx cucumber-js tests/Practice/Cucumber-BDD/features --tags "@Validations"
+
+
+Tagged Hooks :
+Run the hooks before/After the tagged scenarios only
+
+
+Before({tags:"@Validations"} , async function(){
+    const browser = await chromium.launch({ headless: false });
+    const context = await browser.newContext();
+    this.page = await context.newPage();
+})
+
+
+--> If we want to run two scenarios parallel
+    = -> npx cucumber-js tests/Practice/Cucumber-BDD/features/ErrorValidations.feature --parallel 3(No of scenarios you want to run parallel)
+--> We cannot run 2 feature files parallel in playwright
+
+
+Reports:
+------------
+npx cucumber-js tests/Practice/Cucumber-BDD/features --tags "@Validations" --format html:cucumber-report.html
+
+
+To retry -->  --retry 2
