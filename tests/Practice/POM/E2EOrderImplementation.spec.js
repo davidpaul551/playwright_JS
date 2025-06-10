@@ -1,11 +1,10 @@
 import { test, expect } from "@playwright/test";
 
+import { LoginPage } from "./PageObjects/LoginPage";
+import { DashBoardPage } from "./PageObjects/DashBoardPage";
+import { Checkout } from "./PageObjects/Checkout";
 
-const { LoginPage } = require("./PageObjects/LoginPage");
-const { DashBoardPage } = require("./PageObjects/DashBoardPage");
-const { Checkout } = require("./PageObjects/Checkout");
-
-const dataset = require('./utils/PlaceOrderTestData.json');
+import dataset from './utils/PlaceOrderTestData.json' assert { type: "json" };
 
 for(const data of dataset){
 test(`Product Ordering E2E using POM ${data.productName} `, async ({ browser }) => {
