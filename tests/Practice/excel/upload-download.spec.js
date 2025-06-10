@@ -1,9 +1,7 @@
-const ExcelJs = require("exceljs");
+import ExcelJs from "exceljs";
 import { test, expect } from "@playwright/test";
-const path = require('path');
-const os = require('os');
-
-
+import path from "path";
+import os from "os";
 
 async function excelText(searchText, replaceText, change, filePath) {
   const workbook = new ExcelJs.Workbook();
@@ -43,8 +41,8 @@ test("upload-download", async ({ page }) => {
     "https://rahulshettyacademy.com/upload-download-test/index.html"
   );
 
-  const textSearch = 'Mango';
-  const updatedValue = '1000'
+  const textSearch = "Mango";
+  const updatedValue = "1000";
   page.getByRole("button", { name: "Download" }).click();
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download" }).click();
@@ -61,8 +59,8 @@ test("upload-download", async ({ page }) => {
   await page.locator("#fileinput").setInputFiles(filePath);
 
   const textLocator = page.getByText(textSearch);
-  const desiredRow = await page.getByRole('row').filter({has:textLocator});
-  await expect(desiredRow.locator('#cell-4-undefined')).toContainText(updatedValue);
-
-
+  const desiredRow = await page.getByRole("row").filter({ has: textLocator });
+  await expect(desiredRow.locator("#cell-4-undefined")).toContainText(
+    updatedValue
+  );
 });

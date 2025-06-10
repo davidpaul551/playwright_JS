@@ -1,4 +1,4 @@
-const { expect } = require("@playwright/test");
+import { expect } from "allure-playwright";
 class APIUtils {
   constructor(apiContext, LoginPayload) {
     this.apiContext = apiContext;

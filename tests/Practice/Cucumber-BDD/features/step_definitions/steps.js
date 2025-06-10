@@ -1,9 +1,10 @@
-const { When, Then, Given } = require("@cucumber/cucumber");
-const { LoginPage } = require("../../../POM/PageObjects/LoginPage");
-const { DashBoardPage } = require("../../../POM/PageObjects/DashBoardPage");
-const { Checkout } = require("../../../POM/PageObjects/Checkout");
+import { When, Then, Given } from "@cucumber/cucumber";
+import { LoginPage } from "../../../POM/PageObjects/LoginPage.js";
+import { DashBoardPage } from "../../../POM/PageObjects/DashBoardPage.js";
+import { Checkout } from "../../../POM/PageObjects/Checkout.js";
 
-const { chromium, expect } = require("@playwright/test");
+import { chromium, expect } from "@playwright/test";
+
 
 Given("Login with {string} and {string}",{ timeout: 10000 },async function (username, password) {
     const loginPage = new LoginPage(this.page);

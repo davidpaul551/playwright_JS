@@ -1,4 +1,4 @@
-const ExcelJs = require("exceljs");
+import ExcelJs from "exceljs";
 
 async function excelText(searchText, replaceText,change,  filePath) {
   const workbook = new ExcelJs.Workbook();

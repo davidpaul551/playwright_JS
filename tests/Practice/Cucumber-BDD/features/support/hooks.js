@@ -1,6 +1,7 @@
-const { After, Before, AfterStep, Status } = require('@cucumber/cucumber')
-const { chromium } = require('@playwright/test');
-const path = require('path');
+import { After, Before, AfterStep, Status } from '@cucumber/cucumber';
+import { chromium } from '@playwright/test';
+import path from 'path';
+
 
 Before(async function () {
   const browser = await chromium.launch({ headless: false });
