@@ -1,4 +1,4 @@
-class LoginPage{
+export class LoginPage{
 
 
     constructor(page){
@@ -24,4 +24,3 @@ class LoginPage{
 }
 
 
-module.exports = {LoginPage}

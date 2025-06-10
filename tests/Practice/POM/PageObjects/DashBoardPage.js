@@ -1,4 +1,4 @@
-class DashBoardPage{
+export class DashBoardPage{
     constructor(page){
         this.products = page.locator(".card-body");
         this.productsText = page.locator(".card-body b");
@@ -27,4 +27,3 @@ class DashBoardPage{
 
 }
 
-module.exports = {DashBoardPage}

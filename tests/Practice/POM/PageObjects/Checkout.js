@@ -1,4 +1,4 @@
-class Checkout {
+export class Checkout {
   constructor(page) {
     this.page = page;
     this.firstElement = page.locator("div li");
@@ -100,4 +100,3 @@ class Checkout {
     return cleanedOrderId;
   }
 }
-module.exports = { Checkout };
