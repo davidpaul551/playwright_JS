@@ -194,8 +194,12 @@ Installation:
 npm install -D allure-playwright
 
 Generate Allure Report after the tests are executed:
+
+>mvn clean verify -Dmaven.test.failure.ignore=true
+
 allure generate ./allure-results -o ./allure-report
 allure generate ./allure-results -o ./allure-report --clean
+allure generate target/allure-results --clean -o target/allure-report
 
 
 Open the generated report:
@@ -239,6 +243,72 @@ Use assertion to Validate logo each parameterization
 
 
 9880614548
+
+set SONAR_TOKEN=4b43365b915b24ab539e4c97a84b37108a829168
+SonarQube:
+4b43365b915b24ab539e4c97a84b37108a829168
+
+Surefire
+failsafe
+JaCoCo
+allure
+
+
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=testing551_junit -Dsonar.organization=testing551 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=4b43365b915b24ab539e4c97a84b37108a829168 -Dsonar.coverage.jacoco.reportPaths=target/site/jacoco/jacoco.xml
+
+
+JACOCO is used for the code coverage reports:
+mvn clean verify surefire-report:report jacoco:report
+
+Phase	   	What It Does
+validate   	Validates the project structure
+compile		Compiles the source code
+test		Runs unit tests
+package		Packages code into a .jar or .war
+verify		Verifies test results, QA tools, coverage
+install		Installs the .jar into the local repo
+deploy		Deploys to a remote repository
+
+
+Jenkins:
+java -jar jenkins.war
+
+
+
+
+MockMvc:
+
+
+1. JUnit launches Spring test runner
+2. @SpringBootTest starts full Spring context (controllers, services, repositories)
+3. H2 in-memory DB is auto-configured
+4. @Transactional ensures data is rolled back after test
+5. mockMvc.perform(...) simulates a real HTTP request
+6. Internally calls controller → service → repository (H2 DB)
+7. Asserts response using mock JSON response
+8. Test ends, DB resets
+
+
+RestTemplate:
+
+
+1. JUnit launches Spring test runner
+2. SpringBootTest starts:
+     - Spring context
+     - Embedded Tomcat on random port (e.g., 65432)
+3. H2 in-memory DB is auto-configured
+4. (Optional) schema.sql/data.sql populates DB
+5. restTemplate.exchange(...) sends a real HTTP request:
+   → http://localhost:65432/addBook
+6. Request flows through:
+   → Embedded Tomcat (real HTTP layer)
+   → Controller → Service → Repository → H2 DB
+7. Controller returns response (converted to JSON)
+8. restTemplate receives and maps JSON to Java object
+9. Asserts status and body
+10. Test ends, DB resets
+
 
 
 
